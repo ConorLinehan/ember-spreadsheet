@@ -41,6 +41,7 @@
 .handsontable tbody,
 .handsontable thead,
 .handsontable td,
+.handsontable input.htInput,
 .handsontable th,
 .handsontable input,
 .handsontable textarea,
@@ -85,7 +86,8 @@
 }
 
 .handsontable th,
-.handsontable td {
+.handsontable td,
+.handsontable input.htInput {
   border-right: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   height: 22px;
@@ -101,11 +103,13 @@
   /* preserve new line character in cell */
 }
 
-.handsontable td.htInvalid {
+.handsontable td.htInvalid,
+.handsontable input.htInput.htInvalid {
   background-color: #ff4c42 !important; /*gives priority over td.area selection background*/
 }
 
-.handsontable td.htNoWrap {
+.handsontable td.htNoWrap,
+.handsontable input.htInput.htNoWrap {
   white-space: nowrap;
 }
 
@@ -125,6 +129,7 @@
 
 .handsontable th:first-child,
 .handsontable td:first-of-type,
+.handsontable input.htInput:first-of-type,
 .handsontable .htNoFrame + th,
 .handsontable .htNoFrame + td {
   border-left: 1px solid #CCC;
@@ -135,7 +140,7 @@
 }
 
 .handsontable tr:first-child th,
-.handsontable tr:first-child td {
+.handsontable tr:first-child td, {
   border-top: 1px solid #CCC;
 }
 
